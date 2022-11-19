@@ -15,10 +15,10 @@ public class SalesManager {
         return max;
     }
 
-    public int avg() {
-        int avg;
-        int sum = 0;
-        for (int x : sales) {
+    public long avg() {
+        long avg;
+        long sum = 0;
+        for (long x : sales) {
             if (x != getMax(sales) && x != getMin(sales)) {
                 sum += x;
             }
@@ -26,17 +26,17 @@ public class SalesManager {
         return avg = sum / (sales.length - 2);
     }
 
-    private static int getMax(int[] A) {
-        int max = Integer.MIN_VALUE;
-        for (int i : A) {
+    private static long getMax(long[] A) {
+        long max = Long.MIN_VALUE;
+        for (long i : A) {
             max = Math.max(max, i);
         }
         return max;
     }
 
-    private static int getMin(int[] A) {
-        int min = Integer.MAX_VALUE;
-        for (int i : A) {
+    private static long getMin(long[] A) {
+        long min = Long.MAX_VALUE;
+        for (long i : A) {
             min = Math.min(min, i);
         }
         return min;
