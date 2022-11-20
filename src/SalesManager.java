@@ -19,11 +19,9 @@ public class SalesManager {
         long avg;
         long sum = 0;
         for (long x : sales) {
-            if (x != getMax(sales) && x != getMin(sales)) {
-                sum += x;
+            sum += x;
             }
-        }
-        return avg = sum / (sales.length - 2);
+        return avg = (sum - (getMax(sales) + getMin(sales))) / (sales.length - 2);
     }
 
     private long getMax(long[] A) {
