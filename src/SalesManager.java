@@ -26,7 +26,7 @@ public class SalesManager {
         return avg = sum / (sales.length - 2);
     }
 
-    private static long getMax(long[] A) {
+    private long getMax(long[] A) {
         long max = Long.MIN_VALUE;
         for (long i : A) {
             max = Math.max(max, i);
@@ -34,7 +34,7 @@ public class SalesManager {
         return max;
     }
 
-    private static long getMin(long[] A) {
+    private long getMin(long[] A) {
         long min = Long.MAX_VALUE;
         for (long i : A) {
             min = Math.min(min, i);
