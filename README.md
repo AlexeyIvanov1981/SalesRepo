@@ -1,6 +1,6 @@
 ###### First project for Java learen
 
-## ** SalesManager ** 
+## ** SalesManager ** 111
 
 This project demonstrates work of a class to determine maximum purchase
 
