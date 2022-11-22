@@ -20,7 +20,7 @@ public class SalesManager {
         long sum = 0;
         for (long x : sales) {
             sum += x;
-            }
+        }
         return avg = (sum - (getMax(sales) + getMin(sales))) / (sales.length - 2);
     }
 
