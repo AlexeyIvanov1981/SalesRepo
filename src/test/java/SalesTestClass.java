@@ -15,4 +15,10 @@ public class SalesTestClass {
         long result = sales.avg();
         Assertions.assertEquals(53, result);
     }
+
+    @Test
+    public void minSalesTest(){
+        long result = sales.min();
+        Assertions.assertEquals(1, result);
+    }
 }
