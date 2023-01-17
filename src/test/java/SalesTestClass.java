@@ -6,12 +6,12 @@ public class SalesTestClass {
     SalesManager sales = new SalesManager(new long[]{1, 20, 50, 90, 110});
 
     @Test
-    public void maxSilesTest(){
+    public void maxSalesTest(){
         long result = sales.max();
         Assertions.assertEquals(110, result);
     }
     @Test
-    public void avgSilesTest(){
+    public void avgSalesTest(){
         long result = sales.avg();
         Assertions.assertEquals(53, result);
     }
